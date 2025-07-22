@@ -5,7 +5,7 @@
   gather_facts: false
 
   vars:
-    default_bucket_prefix: "yaswanth-demo-s3-bucket"
+    default_bucket_prefix: "ansible-demo-s3-bucket"
 
   tasks:
     - name: 🧮 Generate random suffix (only once)
