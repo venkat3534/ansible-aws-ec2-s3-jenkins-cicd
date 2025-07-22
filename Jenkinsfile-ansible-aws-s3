@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh '''
                 ansible-playbook ansible-aws-s3-deploy.yaml
-                #ansible-playbook ansible-aws-s3-deploy.yaml --extra-vars "bucket_name=yaswanth-demo-s3-bucket-${BUILD_NUMBER}"
+                #ansible-playbook ansible-aws-s3-deploy.yaml --extra-vars "bucket_name=ansible-demo-s3-bucket-${BUILD_NUMBER}"
                 '''
             }
         }
