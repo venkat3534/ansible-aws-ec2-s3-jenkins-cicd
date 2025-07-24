@@ -15,9 +15,6 @@ sudo systemctl start docker
 echo "👤 Adding ec2-user to docker group..."
 sudo usermod -aG docker ec2-user
 
-echo "We need refresh the session for the changes to take effect"
-sudo newgrp docker
-
 echo "📦 Pulling Jenkins LTS image..."
 sudo docker pull jenkins/jenkins:lts
 
